@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  background: #0b1120;
+  color: #f1f5f9;
+  padding-bottom: 50px;
+}
+
+header {
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #1e293b;
+}
+
+.logo-area {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.logo-area h1 {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+.logo-area h1 span {
+  color: #61dafb;
+}
+
+.search-box {
+  background: #1e293b;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 40%;
+}
+.search-box input {
+  background: transparent;
+  border: none;
+  color: white;
+  width: 100%;
+  outline: none;
+}
+
+.categories {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px 5%;
+  flex-wrap: wrap;
+}
+.menu-btn {
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  background: transparent;
+  color: #94a3b8;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.menu-btn.active,
+.menu-btn:hover {
+  background: #0ea5e9;
+  color: white;
+  border-color: #0ea5e9;
+  box-shadow: 0 0 20px rgba(14, 165, 233, 0.4);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 25px;
+  padding: 0 5%;
+}
+
+.card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 20px;
+  border: 1px solid #334155;
+  transition: 0.3s;
+}
+.card:hover {
+  transform: translateY(-5px);
+  border-color: #61dafb;
+}
+
+.badge {
+  background: rgba(97, 218, 251, 0.1);
+  color: #61dafb;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 12px;
+  float: right;
+}
+
+.code-box {
+  margin-top: 15px;
+}
+pre {
+  background: #000;
+  padding: 15px;
+  border-radius: 12px;
+  overflow-x: auto;
+  border: 1px solid #1e293b;
+}
+code {
+  color: #fb7185;
+  font-size: 13px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.result-box {
+  margin-top: 15px;
+  padding: 15px;
+  border-radius: 12px;
+  background: #f8fafc;
+  border: 2px dashed #0ea5e9;
+  color: #0f172a;
+}

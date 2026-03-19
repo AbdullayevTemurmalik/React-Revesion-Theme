@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+    />
+
+    <title>React Revision | TemurMalik</title>
+
+    <link rel="stylesheet" href="syle.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="logo-area" id="mainLogo">
+        <i
+          class="bx bxl-react bx-spin"
+          style="color: #61dafb; font-size: 2.5rem"
+        ></i>
+        <h1>React <span>Revision</span></h1>
+      </div>
+      <div class="search-box">
+        <i class="bx bx-search"></i>
+        <input type="text" id="searchInput" placeholder="Mavzuni qidiring..." />
+      </div>
+    </header>
+
+    <nav class="categories">
+      <button class="menu-btn active" data-category="all">Hammasi</button>
+      <button class="menu-btn" data-category="Asoslar">Asoslar</button>
+      <button class="menu-btn" data-category="Hooks">Hooks</button>
+      <button class="menu-btn" data-category="Library">Library</button>
+      <button class="menu-btn" data-category="Optimization">
+        Optimization
+      </button>
+      <button class="menu-btn" data-category="Redux">Redux</button>
+      <button class="menu-btn" data-category="Git">Git</button>
+    </nav>
+
+    <main id="results"></main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
